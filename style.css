@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat',Arial,sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: #201367;
+  color: #ffffff;
+  padding: 15px 18px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  font-weight: 600;
+  transition:  all 0.3s ease-in-out;
+}
+  
+.btn:hover {
+  background-color: #3a25b6;
+  transition:  all 0.3s ease-in-out;
+}
+
+.open-calc {
+position: absolute;
+right: 100px;
+bottom: 100px;
+}
+
+.modal-container {
+font-size: 18px;
+font-family: 'Montserrat',Arial,sans-serif;
+}
+  
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition:  all 0.3s ease-in-out;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  transition:  all 0.3s ease-in-out;
+}
+
+.modal--visible {
+  display: block;
+}
+  
+.modal-calc {
+width: 500px;
+height: 400px;
+background-color: #ffffff;
+color: #000000;
+display: flex;
+padding: 20px;
+z-index: 9;
+}
+  
+.form{
+  margin: 0 auto;
+}
+
+.form-title {
+  margin-bottom: 40px; 
+  font-size: 30px;
+}
+
+.form-section {
+  padding-bottom: 20px; 
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-lable {
+width: 70%;
+}
+
+.input-lable {
+  width: 60px;
+ 
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range] {
+    background: #c9d7ff;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 20px;
+  background: #0044fe;
+  cursor: pointer;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 10px;
+  width: 10px;
+  border-radius: 20px;
+  background: #0044fe;
+  cursor: pointer;
+}
+
+/* input[type=range]:focus::-webkit-slider-runnable-track {*/
+ /* background: #0044fe;
+} */ 
+
+.input-numbers {
+border: none;
+font-size: 18px;
+font-family: inherit;  
+background-color: #ffffff;
+max-width: 60px;
+}
+
+.descr {
+  font-size: 15px;
+}
+
+.calc-price {
+  padding: 20px 0;
+}
+
+
+
+
+

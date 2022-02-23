@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор</title>
+ <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ <button class="open-calc btn" data-path="kl">Рассчитать стоимость</button>
+ <div class="modal-container">
+   <div class="modal-overlay">
+      <div class="modal-calc">
+        <form id="form" class="form">
+          <h1 class="form-title">Cтоимость проекта</h1>
+          <div class="form-section">
+            <div class="input-section">
+              <label class="range-lable">
+              <input type="range" id="members-range" class="range-input" min="1" max="5000" value="1" step="1" />
+              </label>
+              <label class="input-lable">
+              <input type="number" min="1" max="5000" value="1" id="members-input" class="input-numbers" />
+              </label>
+            </div>
+            <span class="descr">Количество участников</span>
+          </div>
+          <div class="form-section">
+            <div class="input-section">
+              <label class="range-lable">
+              <input type="range" id="days-range" class="range-input" min="0" max="5" value="1" step="1" /> 
+              </label>
+              <label class="input-lable">
+                <input type="number" min="0" max="5" value="1" id="days-input" class="input-numbers" />
+              </label>
+            </div>
+            <span class="descr">Количество дней</span>
+          </div>
+          <div class="form-section">
+            <div class="input-section">
+             <label class="range-lable">
+              <input type="range" id="salary-range" class="range-input" min="0" max="5000" value="1" step="1" />
+              </label>
+              <label class="input-lable">
+              <input type="number" min="0" max="100000" value="1" id="salary-input" class="input-numbers" />
+              </label>
+            </div>
+            <span class="descr">Средняя зарплата в час</span>
+          </div>
+          <div class="calc-price">
+            Стоимость:
+              <span id="total-price">0</span> &nbsp;рублей
+          </div>
+        </form>
+      </div>
+   </div>
+ </div>
+ 
+ <script src="./main.js"></script>
+</body>
+</html>
